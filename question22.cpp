@@ -14,6 +14,7 @@ e& operator--(e &x) {
 int main(void)
 {
     e f = c;
-    cout << int(f--) << endl;
+    cout << int(f--) << endl; // ERROR: comiling
+    cout << int(--f) << endl; // Ok
     return 0;
 }
